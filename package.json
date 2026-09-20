@@ -1,0 +1,35 @@
+{
+  "name": "temporal-logic-educator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "antlr": "antlr4ng -Dlanguage=TypeScript -o src/generated -visitor -no-listener -Xexact-output-dir grammar/*.g4"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "antlr4ng": "^3.0.16",
+    "d3": "^7.9.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "antlr4ng-cli": "^2.0.0",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}
