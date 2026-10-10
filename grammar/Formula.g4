@@ -78,5 +78,5 @@ FORALL: 'A';
 EXISTS: 'E';
 LPAREN: '(';
 RPAREN: ')';
-PROP: [a-z][a-zA-Z0-9_]*;
+PROP: [a-zα-ω] [a-z0-9_α-ω]*;
 WS: [ \t\r\n]+ -> skip;
