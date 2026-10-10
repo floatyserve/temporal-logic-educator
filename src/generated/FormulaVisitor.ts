@@ -1,0 +1,422 @@
+// Generated from grammar/Formula.g4 by ANTLR 4.13.1
+
+import { AbstractParseTreeVisitor } from "antlr4ng";
+
+
+import { LtlFormulaContext } from "./FormulaParser.js";
+import { CtlFormulaContext } from "./FormulaParser.js";
+import { CtlStarFormulaContext } from "./FormulaParser.js";
+import { LtlFalseContext } from "./FormulaParser.js";
+import { LtlImpliesContext } from "./FormulaParser.js";
+import { LtlOrContext } from "./FormulaParser.js";
+import { LtlUntilContext } from "./FormulaParser.js";
+import { LtlPropContext } from "./FormulaParser.js";
+import { LtlNextContext } from "./FormulaParser.js";
+import { LtlAndContext } from "./FormulaParser.js";
+import { LtlTrueContext } from "./FormulaParser.js";
+import { LtlGloballyContext } from "./FormulaParser.js";
+import { LtlNotContext } from "./FormulaParser.js";
+import { LtlParenContext } from "./FormulaParser.js";
+import { LtlEventuallyContext } from "./FormulaParser.js";
+import { CtlImpliesContext } from "./FormulaParser.js";
+import { CtlTrueContext } from "./FormulaParser.js";
+import { CtlAfContext } from "./FormulaParser.js";
+import { CtlAgContext } from "./FormulaParser.js";
+import { CtlExContext } from "./FormulaParser.js";
+import { CtlAuContext } from "./FormulaParser.js";
+import { CtlEuContext } from "./FormulaParser.js";
+import { CtlParenContext } from "./FormulaParser.js";
+import { CtlNotContext } from "./FormulaParser.js";
+import { CtlAxContext } from "./FormulaParser.js";
+import { CtlPropContext } from "./FormulaParser.js";
+import { CtlAndContext } from "./FormulaParser.js";
+import { CtlOrContext } from "./FormulaParser.js";
+import { CtlEfContext } from "./FormulaParser.js";
+import { CtlEgContext } from "./FormulaParser.js";
+import { CtlFalseContext } from "./FormulaParser.js";
+import { StateOrContext } from "./FormulaParser.js";
+import { StateTrueContext } from "./FormulaParser.js";
+import { StateForallContext } from "./FormulaParser.js";
+import { StatePropContext } from "./FormulaParser.js";
+import { StateFalseContext } from "./FormulaParser.js";
+import { StateAndContext } from "./FormulaParser.js";
+import { StateParenContext } from "./FormulaParser.js";
+import { StateImpliesContext } from "./FormulaParser.js";
+import { StateNotContext } from "./FormulaParser.js";
+import { StateExistsContext } from "./FormulaParser.js";
+import { PathParenContext } from "./FormulaParser.js";
+import { PathNextContext } from "./FormulaParser.js";
+import { PathNotContext } from "./FormulaParser.js";
+import { PathGloballyContext } from "./FormulaParser.js";
+import { PathUntilContext } from "./FormulaParser.js";
+import { PathOrContext } from "./FormulaParser.js";
+import { PathAndContext } from "./FormulaParser.js";
+import { PathStateContext } from "./FormulaParser.js";
+import { PathImpliesContext } from "./FormulaParser.js";
+import { PathEventuallyContext } from "./FormulaParser.js";
+
+
+/**
+ * This interface defines a complete generic visitor for a parse tree produced
+ * by `FormulaParser`.
+ *
+ * @param <Result> The return type of the visit operation. Use `void` for
+ * operations with no return type.
+ */
+export class FormulaVisitor<Result> extends AbstractParseTreeVisitor<Result> {
+    /**
+     * Visit a parse tree produced by `FormulaParser.ltlFormula`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlFormula?: (ctx: LtlFormulaContext) => Result;
+    /**
+     * Visit a parse tree produced by `FormulaParser.ctlFormula`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlFormula?: (ctx: CtlFormulaContext) => Result;
+    /**
+     * Visit a parse tree produced by `FormulaParser.ctlStarFormula`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlStarFormula?: (ctx: CtlStarFormulaContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlFalse`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlFalse?: (ctx: LtlFalseContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlImplies`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlImplies?: (ctx: LtlImpliesContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlOr`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlOr?: (ctx: LtlOrContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlUntil`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlUntil?: (ctx: LtlUntilContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlProp`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlProp?: (ctx: LtlPropContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlNext`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlNext?: (ctx: LtlNextContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlAnd`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlAnd?: (ctx: LtlAndContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlTrue`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlTrue?: (ctx: LtlTrueContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlGlobally`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlGlobally?: (ctx: LtlGloballyContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlNot`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlNot?: (ctx: LtlNotContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlParen`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlParen?: (ctx: LtlParenContext) => Result;
+    /**
+     * Visit a parse tree produced by the `LtlEventually`
+     * labeled alternative in `FormulaParser.ltlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitLtlEventually?: (ctx: LtlEventuallyContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlImplies`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlImplies?: (ctx: CtlImpliesContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlTrue`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlTrue?: (ctx: CtlTrueContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlAf`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlAf?: (ctx: CtlAfContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlAg`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlAg?: (ctx: CtlAgContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlEx`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlEx?: (ctx: CtlExContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlAu`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlAu?: (ctx: CtlAuContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlEu`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlEu?: (ctx: CtlEuContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlParen`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlParen?: (ctx: CtlParenContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlNot`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlNot?: (ctx: CtlNotContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlAx`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlAx?: (ctx: CtlAxContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlProp`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlProp?: (ctx: CtlPropContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlAnd`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlAnd?: (ctx: CtlAndContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlOr`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlOr?: (ctx: CtlOrContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlEf`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlEf?: (ctx: CtlEfContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlEg`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlEg?: (ctx: CtlEgContext) => Result;
+    /**
+     * Visit a parse tree produced by the `CtlFalse`
+     * labeled alternative in `FormulaParser.ctlExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitCtlFalse?: (ctx: CtlFalseContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateOr`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateOr?: (ctx: StateOrContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateTrue`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateTrue?: (ctx: StateTrueContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateForall`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateForall?: (ctx: StateForallContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateProp`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateProp?: (ctx: StatePropContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateFalse`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateFalse?: (ctx: StateFalseContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateAnd`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateAnd?: (ctx: StateAndContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateParen`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateParen?: (ctx: StateParenContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateImplies`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateImplies?: (ctx: StateImpliesContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateNot`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateNot?: (ctx: StateNotContext) => Result;
+    /**
+     * Visit a parse tree produced by the `StateExists`
+     * labeled alternative in `FormulaParser.stateExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitStateExists?: (ctx: StateExistsContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathParen`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathParen?: (ctx: PathParenContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathNext`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathNext?: (ctx: PathNextContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathNot`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathNot?: (ctx: PathNotContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathGlobally`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathGlobally?: (ctx: PathGloballyContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathUntil`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathUntil?: (ctx: PathUntilContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathOr`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathOr?: (ctx: PathOrContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathAnd`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathAnd?: (ctx: PathAndContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathState`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathState?: (ctx: PathStateContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathImplies`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathImplies?: (ctx: PathImpliesContext) => Result;
+    /**
+     * Visit a parse tree produced by the `PathEventually`
+     * labeled alternative in `FormulaParser.pathExpr`.
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    visitPathEventually?: (ctx: PathEventuallyContext) => Result;
+}
+
