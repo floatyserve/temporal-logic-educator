@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "antlr": "antlr4ng -Dlanguage=TypeScript -o src/generated -visitor -no-listener -Xexact-output-dir grammar/*.g4"
+    "antlr": "antlr4ng -Dlanguage=TypeScript -o src/generated -visitor -no-listener -Xexact-output-dir grammar/*.g4 && node scripts/postprocess-antlr.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
