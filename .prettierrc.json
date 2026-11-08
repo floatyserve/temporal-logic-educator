@@ -1,5 +1,12 @@
 {
   "semi": true,
   "singleQuote": false,
-  "printWidth": 100
+  "printWidth": 100,
+  "tabWidth": 4,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": { "tabWidth": 2 }
+    }
+  ]
 }

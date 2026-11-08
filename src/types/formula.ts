@@ -1,81 +1,81 @@
 export interface AtomFormula {
-  kind: "atom";
-  prop: string;
+    kind: "atom";
+    prop: string;
 }
 
 export interface FalseFormula {
-  kind: "false";
+    kind: "false";
 }
 
 export interface TrueFormula {
-  kind: "true";
+    kind: "true";
 }
 
 export interface NotFormula {
-  kind: "not";
-  arg: Formula;
+    kind: "not";
+    arg: Formula;
 }
 
 export interface AndFormula {
-  kind: "and";
-  left: Formula;
-  right: Formula;
+    kind: "and";
+    left: Formula;
+    right: Formula;
 }
 
 export interface OrFormula {
-  kind: "or";
-  left: Formula;
-  right: Formula;
+    kind: "or";
+    left: Formula;
+    right: Formula;
 }
 
 export interface ImpliesFormula {
-  kind: "implies";
-  left: Formula;
-  right: Formula;
+    kind: "implies";
+    left: Formula;
+    right: Formula;
 }
 
 export interface NextFormula {
-  kind: "next";
-  arg: Formula;
+    kind: "next";
+    arg: Formula;
 }
 
 export interface EventuallyFormula {
-  kind: "eventually";
-  arg: Formula;
+    kind: "eventually";
+    arg: Formula;
 }
 
 export interface GloballyFormula {
-  kind: "globally";
-  arg: Formula;
+    kind: "globally";
+    arg: Formula;
 }
 
 export interface UntilFormula {
-  kind: "until";
-  left: Formula;
-  right: Formula;
+    kind: "until";
+    left: Formula;
+    right: Formula;
 }
 
 export interface ExistsFormula {
-  kind: "exists";
-  arg: Formula;
+    kind: "exists";
+    arg: Formula;
 }
 
 export interface ForallFormula {
-  kind: "forall";
-  arg: Formula;
+    kind: "forall";
+    arg: Formula;
 }
 
 export type Formula =
-  | AtomFormula
-  | FalseFormula
-  | TrueFormula
-  | NotFormula
-  | AndFormula
-  | OrFormula
-  | ImpliesFormula
-  | NextFormula
-  | EventuallyFormula
-  | GloballyFormula
-  | UntilFormula
-  | ExistsFormula
-  | ForallFormula;
+    | AtomFormula
+    | FalseFormula
+    | TrueFormula
+    | NotFormula
+    | AndFormula
+    | OrFormula
+    | ImpliesFormula
+    | NextFormula
+    | EventuallyFormula
+    | GloballyFormula
+    | UntilFormula
+    | ExistsFormula
+    | ForallFormula;
